@@ -1,0 +1,16 @@
+.footer {
+    background-color: #25272e;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  
