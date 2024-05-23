@@ -50,18 +50,41 @@
   border-radius: 20px;
   padding: 2px 13px;
   cursor: pointer;
-  margin-top: 13px;
+  /* margin-top: 13px; */
 }
 .custom-btn-title {
   margin: 0;
 }
+.logo-img {
+  width: 250px;
+  height: 70px;
+}
+.navbar-row {
+  display: contents;
+  width: 100%;
+}
 ul {
   display: flex;
+  justify-content: right;
+  margin-bottom: 0 !important;
 }
 ul li {
   list-style: none;
   margin-left: 10px;
   margin-right: 10px;
+}
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-radius: 5px;
+  border-bottom: #ef960b !important;
+}
+.nav-item .nav-links:hover {
+  border-bottom: #ef960b;
 }
 .text-gray {
   color: #929090;
@@ -86,7 +109,7 @@ ul li {
 .experience-btn {
   display: inline-block;
   background: #fff;
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 20px;
   padding: 2px 13px;
   cursor: pointer;
@@ -109,8 +132,73 @@ ul li {
   color: #929090;
 }
 .card-img-top {
-  width: 40px !important;
+  width: 30px !important;
+  height: 40px !important;
 }
 .quality-container {
   transform: translateY(-30%);
+}
+.list-conatiner {
+  display: flex;
+  justify-content: end;
+}
+.quality-text {
+  font-weight: normal;
+  font-size: 35px;
+}
+.small-text {
+  font-size: 14px;
+  color: #919191;
+}
+.card-body {
+  height: 220px;
+  border: 1px solid black;
+  border-right-color: #707070;
+}
+.text-experience {
+  color: #696969;
+}
+.storelogo {
+  width: 85%;
+}
+
+.footer-icons svg {
+  width: 23px;
+  height: 23px;
+}
+.footer-title {
+  font-size: 27px;
+}
+@media screen and (max-width: 780px) {
+  .logo-portion {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list-conatiner {
+    justify-content: center !important;
+  }
+  .main-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links {
+    padding: 1.5rem 1rem !important;
+  }
+  ul li {
+    margin-right: 0px !important;
+  }
+  .custom-btn {
+    padding: 7px 5rem !important;
+  }
+  .view-height {
+    height: 100vh !important;
+    display: block !important;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  .card-body {
+    border: 0px;
+  }
 }

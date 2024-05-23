@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Experience from "./Components/Experience/Experience";
 import Banner from "./Components/BannerSection/Banner";
 import Qualities from "./Components/Quality/qualities";
+import Services from "./Components/Services/Services";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <div className="position-relative">
           <Qualities />
         </div>
+        {/* <Services /> */}
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
