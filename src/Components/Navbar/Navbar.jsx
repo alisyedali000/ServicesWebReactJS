@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "../button/button";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import Logo from '../../images/main-logo.png'
+import Logo from '../../images/main-logo.svg'
 import "./Navbar.css";
 
 function Navbar() {
