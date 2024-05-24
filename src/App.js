@@ -9,16 +9,28 @@ import Experience from "./Components/Experience/Experience";
 import Banner from "./Components/BannerSection/Banner";
 import Qualities from "./Components/Quality/qualities";
 import Services from "./Components/Services/Services";
+import Items from "./Components/Item/items";
+import Trip from "./Components/Trip/Trip";
+import Away from "./Components/Away/Away";
+import Crousel from "./Components/Crousel/Crousel";
 function App() {
   return (
     <>
       <Router>
         <Navbar />
         <Banner />
-        <div className="position-relative">
+        <div className="qualities-bg">
           <Qualities />
+          <Services
+            title="Our Services"
+            text="Everything You Need for Your Home, All in One Place"
+          />
+          <Items />
         </div>
-        {/* <Services /> */}
+        <Trip />
+        <Away />
+        <Services title="What our Customers  Say!" />
+        <Crousel />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

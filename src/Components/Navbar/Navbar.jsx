@@ -10,13 +10,30 @@ import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  // const [button, setButton] = useState(true);
   const [isMobile, setisMobile] = useState(false);
   const [isDesktop, setIsDesktop] = useState(true);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showCross, setshowCross] = useState(false);
 
 
-  const handleClick = () => setClick(!click);
-  const toggleMenu = () => setisMobile(!isMobile);
+
+  // const toggleMenu = () => {
+  //   setisMobile(!isMobile)
+
+  // };
+  // const toggleIcon = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+
+  // };
+  const handleCategories = () => {
+    setShowMenu(!showMenu);
+    setshowCross(!showCross);
+
+
+  };
+
 
   const closeMobileMenu = () => setClick(false);
 
@@ -41,27 +58,28 @@ function Navbar() {
     <>
 
       <nav className="">
-        <div className={`container-fluid navbar ${!isMobile ? 'view-height' : ''}`}>
+        <div className={`container-fluid navbar ${showMenu ? 'view-height' : ''}`}>
 
 
-          <div className="row navbar-row">
+          <div className="row navbar-row mobile-navbar">
             <div className="col-12 col-md-3 col-lg-3">
               <div className="logo-portion">
                 <img src={Logo} alt="logo-img" className="logo-img" />
 
                 {isMobile && (
-                  <div onClick={toggleMenu}>
+                  <div onClick={handleCategories}>
 
-                    {isMobile ? <MdMenu fill="#ffffff" /> :
-                      <RxCross2 color="#fff" />}
+                    {showCross ? <RxCross2 color="#fff" /> : <MdMenu fill="#ffffff" />}
+
                   </div>
                 )}
+
 
 
               </div>
 
             </div>
-            <div className={`col-12 col-lg-7 list-conatiner  ${!isMobile && !isDesktop ? '' : 'd-none'} `}>
+            <div className={`col-12 col-lg-7 list-conatiner  ${showMenu ? '' : 'd-none'} `}>
               <ul className="main-list px-0">
                 <li className="nav-item">
                   <Link to="/" className="nav-links" onClick={closeMobileMenu}>
@@ -99,23 +117,19 @@ function Navbar() {
 
 
             </div>
-            <div className={`col-12 col-lg-2  justify-content-center align-items-center ${isMobile && !isDesktop ? 'd-flex' : 'd-none'}`}>
+            <div className={`col-12 col-lg-2  ${showMenu ? 'd-flex' : 'd-none'} justify-content-center align-items-center  `}>
               <Button className="custom-btn" title="Get a Qoute" />
 
             </div>
           </div>
         </div>
-        <div className={`container-fluid navbar desktop-view ${!isMobile && !isDesktop ? 'd-none' : 'd-flex'}`}>
 
 
-          <div className="row navbar-row">
+        <div className={`container-fluid navbar desktop-view `}>
+          <div className="row navbar-row desktop-navbar">
             <div className="col-12 col-md-3 col-lg-3">
               <div className="logo-portion">
                 <img src={Logo} alt="logo-img" className="logo-img" />
-                {isMobile ? <MdMenu fill="#ffffff" /> :
-                  <RxCross2 color="#fff" />}
-
-
               </div>
 
             </div>

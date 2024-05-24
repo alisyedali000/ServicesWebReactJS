@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <div className='banner-container'>
+        <div className='banner-container d-flex align-items-center'>
             <div className='container '>
 
                 <div className="row align-items-center" >
