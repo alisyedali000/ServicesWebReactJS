@@ -6,12 +6,12 @@ const Trip = () => {
     return (
         <div className='container '>
             <div className="row">
-                <div class="col-sm-12 col-lg-6 center-content">
-                    <div class="p-4">
+                <div className="col-sm-12 col-lg-6 center-content">
+                    <div className="p-4">
                         <h1>One Trip, One Fix</h1>
                         <p>We understand the inconvenience of multiple visits to resolve maintenance issues. Our certified professionals plan meticulously, ensuring they have all the necessary tools and materials on hand. Whether it’s AC, plumbing, or electrical work, our team is equipped to handle it all in a single visit.</p>
-                        {/* <div class="">
-                            <p class="custom-btn-title"></p>
+                        {/* <div className="">
+                            <p className="custom-btn-title"></p>
                         </div> */}
                         <Button title='See how Do it?' className='trip-btn' />
                     </div>
