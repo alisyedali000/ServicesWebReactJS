@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Interior Painting",
+        "desc": "We paint interior walls, ceilings, and trim to give your home a fresh, updated look.",
+        "image": "./images/ac.png"
+    },
+    {
+        "id": 2,
+        "title": "Exterior Painting",
+        "desc": "We paint exterior walls, doors, and trim to protect and beautify your home’s exterior.",
+        "image": "path/to/image2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Surface Preparation",
+        "desc": "We clean, sand, and prime surfaces to ensure a smooth and long-lasting paint finish.",
+        "image": "path/to/image3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Color Consultation",
+        "desc": "We provide expert color consultation to help you choose the perfect shades for your home.",
+        "image": "path/to/image4.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Accent Walls",
+        "desc": "We create stunning accent walls to add a focal point and enhance your interior design.",
+        "image": "path/to/image5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Door & Window",
+        "desc": "We paint door and window frames to match your decor and protect them from wear.",
+        "image": "path/to/image6.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Minor Repairs",
+        "desc": "We fix minor wall imperfections before painting to ensure a flawless and smooth finish.",
+        "image": "path/to/image7.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Wallpaper Removal",
+        "desc": "We remove old wallpaper and prepare walls for a fresh, new coat of paint.",
+        "image": "path/to/image8.jpg"
+    }
+]

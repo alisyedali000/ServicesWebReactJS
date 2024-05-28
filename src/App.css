@@ -174,7 +174,8 @@ ul li {
 }
 .text-experience,
 .text-services,
-.text-away {
+.text-away,
+.text-dynamic {
   color: #696969;
 }
 .storelogo {
@@ -200,6 +201,12 @@ ul li {
   padding: 10px;
   gap: 10px;
 }
+.grid-box {
+  background-color: #e4e4e4;
+  padding: 25px;
+  font-size: 30px;
+  /* text-align: center; */
+}
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 25px;
@@ -210,6 +217,10 @@ ul li {
   font-size: 10px;
   color: #a5a5a5;
   /* color: #0a66c2; */
+}
+.detail-grid-text {
+  font-size: 13px;
+  color: black;
 }
 .grid-text-container {
   line-height: 0;
@@ -245,6 +256,32 @@ ul li {
   background-color: #469187;
   height: 200px;
 }
+.text_yellow {
+  color: #ef960b;
+}
+.dynamic-img {
+  width: 100%;
+}
+/* .nav-item {
+  position: relative;
+} */
+.dropdown-list {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+.dropdown-list .dropdown-item {
+  padding: 5px 0 5px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown-list .dropdown-item:ohover {
+  padding: 5px 0 5px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ef960b;
+  color: black;
+}
+
 @media screen and (max-width: 780px) {
   .logo-portion {
     display: flex;

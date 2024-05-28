@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
+import Dynamic from "./Pages/Dynamic/Dynamic";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Experience from "./Components/Experience/Experience";
 import Banner from "./Components/BannerSection/Banner";
@@ -13,11 +14,15 @@ import Items from "./Components/Item/items";
 import Trip from "./Components/Trip/Trip";
 import Away from "./Components/Away/Away";
 import Crousel from "./Components/Crousel/Crousel";
+import Detail from "./Components/Detail/Detail";
+
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <Dynamic />
+        {/* <Items /> */}
         <Banner />
         <div className="qualities-bg">
           <Qualities />
@@ -33,6 +38,7 @@ function App() {
         <Crousel />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dynamic" element={<Dynamic />} />
         </Routes>
         <Experience />
         <Footer />

@@ -16,6 +16,14 @@ function Navbar() {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [showCross, setshowCross] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [dropdownServices, setdropdownServices] = useState(false)
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+  const toggleServiceDropdown = () => {
+    setdropdownServices(!dropdownServices);
+  };
 
 
 
@@ -87,23 +95,39 @@ function Navbar() {
                   </Link>
 
                 </li>
-                <li className="nav-item">
+                <li className="nav-item position-relative">
                   <Link
                     to="/services"
                     className="nav-links"
-                    onClick={closeMobileMenu}
+                    onClick={toggleDropdown}
                   >
                     About us
                     <MdOutlineKeyboardArrowDown fill="#ef960b" />
 
                   </Link>
+                  {dropdownVisible && (
+                    <ul className="d-flex flex-column dropdown-list" >
+                      <li><a class="dropdown-item " href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  )}
                 </li>
                 <li className="nav-item">
-                  <Link to="/cars" className="nav-links" onClick={closeMobileMenu}>
+                  <Link to="/cars" className="nav-links" onClick={toggleServiceDropdown}>
                     Services
                     <MdOutlineKeyboardArrowDown fill="#ef960b" />
 
                   </Link>
+                  {dropdownServices && (
+                    <ul className="d-flex flex-column dropdown-list" >
+                      <li><a class="dropdown-item " href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  )}
                 </li>
                 <li className="nav-item">
                   <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
@@ -141,23 +165,39 @@ function Navbar() {
                   </Link>
 
                 </li>
-                <li className="nav-item">
+                <li className="nav-item position-relative">
                   <Link
                     to="/services"
                     className="nav-links"
-                    onClick={closeMobileMenu}
+                    onClick={toggleDropdown}
                   >
                     About us
                     <MdOutlineKeyboardArrowDown fill="#ef960b" />
 
                   </Link>
+                  {dropdownVisible && (
+                    <ul className="d-flex flex-column dropdown-list" >
+                      <li><a class="dropdown-item " href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  )}
                 </li>
                 <li className="nav-item">
-                  <Link to="/cars" className="nav-links" onClick={closeMobileMenu}>
+                  <Link to="/cars" className="nav-links" onClick={toggleServiceDropdown}>
                     Services
                     <MdOutlineKeyboardArrowDown fill="#ef960b" />
 
                   </Link>
+                  {dropdownServices && (
+                    <ul className="d-flex flex-column dropdown-list" >
+                      <li><a class="dropdown-item " href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  )}
                 </li>
                 <li className="nav-item">
                   <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
