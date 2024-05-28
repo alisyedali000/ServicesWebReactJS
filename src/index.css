@@ -1,3 +1,7 @@
+body{
+  font-family: "Inter", sans-serif !important;
+}
+
 .custom-btn {
   background: #ef960b;
   /* padding: 10px; */
