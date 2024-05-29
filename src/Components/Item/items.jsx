@@ -39,12 +39,11 @@ const Items = () => {
                     <div className="col-sm-3 col-12 p-1" key={index}>
                         <div className='bg-white w-100  d-flex align-items-center justify-content-center py-5'>
                         <a href={`services/${item.link}`} style={{textDecoration: "none", background: "white", textAlign: "center"}} >
-                            <img src={item.img} alt={item.alt} style={{height: "7rem"}}/>
+                            <img src={item.img} alt={item.alt} style={{height: "5rem"}}/>
                             <div className='grid-text-container'>
                                 <h5 className='poppin' style={{color: "black"}}>{item.title}</h5>
                                 <small className='lato' style={{color: "#A5A5A5"}}>{item.description}</small>
                             </div>
-                            
                         </a>
                         </div>
                     </div>

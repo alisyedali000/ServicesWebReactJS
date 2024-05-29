@@ -30,7 +30,7 @@ function Home() {
         <Away />
         <Services title="What our Customers  Say!" />
         <Crousel />
-        <p className="text-center poppins py-5 gray" style={{fontSize: "1.5rem"}}>Everything You Need for Your Home, All in One Place</p>
+        <p className="text-center poppins py-5 gray" style={{fontSize: "1.5rem"}}> </p>
         <Experience />
 
     </>

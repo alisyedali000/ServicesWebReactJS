@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="bg-white">
       <Router>
+      {/* <Navbar /> */}
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

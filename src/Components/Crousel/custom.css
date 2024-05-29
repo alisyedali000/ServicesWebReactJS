@@ -20,11 +20,13 @@ margin-top: 3rem;
 }
 .card-body{
   border: 0;
+  padding: 40px;
+  padding-left: 50px;
 }
 .card-main {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 .card-main p:first-child {
   color: black;
@@ -38,7 +40,7 @@ margin-top: 3rem;
   font-size: .9rem;
 }
 .card-content p{
-color: black;
+color: rgb(114, 113, 113);
 font-size: 1rem;
 line-height: 1rem;
 margin-bottom: 0;

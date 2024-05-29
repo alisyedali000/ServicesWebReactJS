@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "../button/button";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import Logo from '../../images/main-logo.svg'
+import Logo from '../../images/NavBarLogo.png'
 import { MdMenu } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 
@@ -38,8 +38,6 @@ function Navbar() {
   const handleCategories = () => {
     setShowMenu(!showMenu);
     setshowCross(!showCross);
-
-
   };
 
 

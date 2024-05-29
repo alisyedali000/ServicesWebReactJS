@@ -49,7 +49,7 @@ function DarkVariantExample() {
 
   return (
     <div style={{position: "relative"}}>
-    <img className="d-none d-sm-block" style={{position: "absolute", top: "-3.5rem", left: "3rem", zIndex: "10", height: "9rem"}} src={`http://localhost:3000/images/Carousel/“.png`} />
+    <img className="d-none d-sm-block" style={{position: "absolute", top: "-3.5rem", left: "3rem", zIndex: "10", height: "25rem"}} src={require('../../images/colons.png')} />
     <Carousel data-bs-theme="dark" data-bs-interval="false" className='poppin'>
       {slideChunks.map((chunk, index) => (
         <Carousel.Item key={index} interval={5000} pause="hover">
@@ -57,19 +57,19 @@ function DarkVariantExample() {
              <div className='col-0 col-sm-3'>
              </div>
             {chunk.map((slide, idx) => (
-              <div className="col-sm-4 col-12" key={idx}>
+              <div className="col-sm-3 col-12" key={idx}>
                 <div className="card rounded bg-white border-0" >
                   <div className="card-body">
                     <div className='card-main'>
                       <img className="card-img-top" src={slide.imgSrc}
                         alt={index} />
                       <div>
-                        <p>{slide.name}</p>
-                        <small>{slide.title}</small>
+                        <p style={{fontSize: 13}}>{slide.name}</p>
+                        <small style={{fontSize: 10}}>{slide.title}</small>
                       </div>
                     </div>
                     <div className='card-content'>
-                      <p>{slide.testimonial}</p>
+                      <p style={{fontSize: 10}}>{slide.testimonial}</p>
                     </div>
                   </div>
                 </div>
