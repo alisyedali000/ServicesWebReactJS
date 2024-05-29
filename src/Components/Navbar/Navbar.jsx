@@ -185,17 +185,17 @@ function Navbar() {
                   )}
                 </li>
                 <li className="nav-item">
-                  <Link to="/" className="nav-links" onClick={toggleServiceDropdown}>
+                  <Link className="nav-links" onClick={toggleServiceDropdown}>
                     Services
                     <MdOutlineKeyboardArrowDown fill="#ef960b" />
 
                   </Link>
                   {dropdownServices && (
                     <ul className="d-flex flex-column dropdown-list" >
-                      <li><a class="dropdown-item " href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      <li><a class="dropdown-item " href="/services/air-conditioning">Air Conditioning</a></li>
+                      <li><a class="dropdown-item" href="/services/electrical">Electrical</a></li>
+                      {/* <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li> */}
                     </ul>
                   )}
                 </li>
