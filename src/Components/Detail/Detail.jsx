@@ -1,17 +1,17 @@
 import React from 'react'
-import data from '../../data/data.json'
-import sampleImg from '../../images/color.svg'
-console.log(data, 'data')
-const Detail = () => {
+
+const Detail = ({ data }) => {
     return (
-        <div className='container'>
-            <div className="grid-container">
+        <div className='container poppin'>
+            <div className="row">
                 {data.map((item) => (
-                    <div className="grid-box">
-                        <img src={sampleImg} alt="AC" />
-                        <div className='my-2'>
-                            <h6 className='fw-bold'>{item.title}</h6>
-                            <p className='detail-grid-text fw-bold mt-4'>{item.desc}</p>
+                    <div className="col-sm-3 col-12 text-center text-sm-start p-2 rounded">
+                        <div className='h-100 rounded' style={{background: "#E4E4E4", padding:"1rem"}}>
+                        <img src={'http://localhost:3000' + item.icon} alt={item.title} style={{height:"2.5rem"}} />
+                        <div className='my-2 h-100'>
+                            <p  style={{fontSize: "1.2rem", fontWeight:"500"}}>{item.title}</p>
+                            <p className='detail-grid-text mt-auto' style={{ fontSize: "1.1rem", fontWeight: "400", marginTop: '1rem' }}>{item.description}</p>
+                        </div>
                         </div>
                     </div>
                 ))}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Iphone from '../../images/iphone.png'
+import Iphone from '../../images/iphone.svg'
 import StoreImg from '../../images/playstore.png'
 import Button from '../button/button'
 

@@ -4,7 +4,7 @@ import VanImg from '../../images/van.png'
 import a from "../../images/curve.png"
 const Trip = () => {
     return (
-        <div className='container '>
+        <div className='container bg-white'>
             <div className="row">
                 <div className="col-sm-12 col-lg-6 center-content">
                     <div className="p-4">

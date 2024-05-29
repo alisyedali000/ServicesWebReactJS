@@ -6,44 +6,22 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Dynamic from "./Pages/Dynamic/Dynamic";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Experience from "./Components/Experience/Experience";
-import Banner from "./Components/BannerSection/Banner";
-import Qualities from "./Components/Quality/qualities";
-import Services from "./Components/Services/Services";
-import Items from "./Components/Item/items";
-import Trip from "./Components/Trip/Trip";
-import Away from "./Components/Away/Away";
-import Crousel from "./Components/Crousel/Crousel";
-import Detail from "./Components/Detail/Detail";
+
+import Service from "./Pages/Services";
 
 function App() {
   return (
-    <>
+    <div className="bg-white">
       <Router>
-        <Navbar />
-        <Dynamic />
-        {/* <Items /> */}
-        <Banner />
-        <div className="qualities-bg">
-          <Qualities />
-          <Services
-            title="Our Services"
-            text="Everything You Need for Your Home, All in One Place"
-          />
-          <Items />
-        </div>
-        <Trip />
-        <Away />
-        <Services title="What our Customers  Say!" />
-        <Crousel />
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dynamic" element={<Dynamic />} />
+          <Route path="/services/:id" element={<Service />} />
         </Routes>
-        <Experience />
         <Footer />
       </Router>
-    </>
+    </div>
   );
 }
 
