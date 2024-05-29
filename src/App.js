@@ -11,7 +11,7 @@ import Service from "./Pages/Services";
 
 function App() {
   return (
-    <>
+    <div className="bg-white">
       <Router>
       <Navbar />
         <Routes>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </>
+    </div>
   );
 }
 

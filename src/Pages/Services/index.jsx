@@ -4,16 +4,8 @@ import Detail from '../../Components/Detail/Detail';
 import "./index.css"
 const Service = () => {
   const { id } = useParams();
-  const [data] = content.filter((c) => c.link = id)
-  // Fetch or use the id to display relevant data
-  // For example, you can filter the itemsData array to get the specific item
+  const data = content.find((c) => c.link === id)
 
-  //   const item = itemsData.find(item => item.id === id);
-
-  //   if (!item) {
-  //     return <div>Service not found</div>;
-  //   }
-  console.log(id, data)
   return (
 
     <div>
