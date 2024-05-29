@@ -115,7 +115,7 @@ function Navbar() {
                   )}
                 </li>
                 <li className="nav-item">
-                  <Link to="/cars" className="nav-links" onClick={toggleServiceDropdown}>
+                  <Link to="/" className="nav-links" onClick={toggleServiceDropdown}>
                     Services
                     <MdOutlineKeyboardArrowDown fill="#ef960b" />
 
@@ -130,7 +130,7 @@ function Navbar() {
                   )}
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                  <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                     Contact
                   </Link>
                 </li>
@@ -167,7 +167,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item position-relative">
                   <Link
-                    to="/services"
+                    to="/"
                     className="nav-links"
                     onClick={toggleDropdown}
                   >
@@ -185,7 +185,7 @@ function Navbar() {
                   )}
                 </li>
                 <li className="nav-item">
-                  <Link to="/cars" className="nav-links" onClick={toggleServiceDropdown}>
+                  <Link to="/" className="nav-links" onClick={toggleServiceDropdown}>
                     Services
                     <MdOutlineKeyboardArrowDown fill="#ef960b" />
 
@@ -200,7 +200,7 @@ function Navbar() {
                   )}
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                  <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                     Contact
                   </Link>
                 </li>
