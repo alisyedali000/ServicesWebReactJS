@@ -9,8 +9,8 @@ const Detail = ({ data }) => {
                         <div className='h-100 rounded' style={{background: "#E4E4E4", padding:"1rem"}}>
                         <img src={'http://localhost:3000' + item.icon} alt={item.title} style={{height:"2.5rem"}} />
                         <div className='my-2 h-100'>
-                            <p  style={{fontSize: "1.5rem", fontWeight:"600"}}>{item.title}</p>
-                            <p className='detail-grid-text mt-auto' style={{ fontSize: "1.125rem", fontWeight: "500", marginTop: '1rem' }}>{item.description}</p>
+                            <p  style={{fontSize: "1.2rem", fontWeight:"500"}}>{item.title}</p>
+                            <p className='detail-grid-text mt-auto' style={{ fontSize: "1.1rem", fontWeight: "400", marginTop: '1rem' }}>{item.description}</p>
                         </div>
                         </div>
                     </div>
