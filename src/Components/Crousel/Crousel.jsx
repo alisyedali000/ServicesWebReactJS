@@ -24,12 +24,12 @@ const slides = [
     "title": "Project Supervisor",
     "testimonial": "ABZ Network has been a game-changer for us. Their dedication and commitment to quality work is evident in everything they do. We look forward to more projects with them."
   },
-  {
-    imgSrc: carousel3,
-    "name": "Sarah Ahmed",
-    "title": "Project Supervisor",
-    "testimonial": "ABZ Network has been a game-changer for us. Their dedication and commitment to quality work is evident in everything they do. We look forward to more projects with them."
-  }
+  // {
+  //   imgSrc: carousel3,
+  //   "name": "Sarah Ahmed",
+  //   "title": "Project Supervisor",
+  //   "testimonial": "ABZ Network has been a game-changer for us. Their dedication and commitment to quality work is evident in everything they do. We look forward to more projects with them."
+  // }
 ]
 
 
@@ -49,7 +49,7 @@ function DarkVariantExample() {
 
   return (
     <div style={{position: "relative"}}>
-    <img className="d-none d-sm-block" style={{position: "absolute", top: "-3.5rem", left: "3rem", zIndex: "10", height: "9rem"}} src={`http://localhost:3000/images/Carousel/“.png`} />
+    <img className="d-none d-sm-block" style={{position: "absolute", top: "-3.5rem", left: "3rem", zIndex: "10", height: "9rem"}} src={window.location.origin + `/images/Carousel/“.png`} />
     <Carousel data-bs-theme="dark" data-bs-interval="false" className='poppin'>
       {slideChunks.map((chunk, index) => (
         <Carousel.Item key={index} interval={5000} pause="hover">
@@ -59,7 +59,7 @@ function DarkVariantExample() {
             {chunk.map((slide, idx) => (
               <div className="col-sm-4 col-12" key={idx}>
                 <div className="card rounded bg-white border-0" >
-                  <div className="card-body">
+                  <div className="card-body" style={{height: "398px", paddingTop: "60px"}}>
                     <div className='card-main'>
                       <img className="card-img-top" src={slide.imgSrc}
                         alt={index} />
@@ -68,7 +68,7 @@ function DarkVariantExample() {
                         <small>{slide.title}</small>
                       </div>
                     </div>
-                    <div className='card-content'>
+                    <div className='card-content h-100' style={{marginTop: "10%"}}>
                       <p>{slide.testimonial}</p>
                     </div>
                   </div>

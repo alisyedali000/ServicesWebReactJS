@@ -6,6 +6,14 @@
   }
 
 }
+.container{
+  --bs-gutter-x: 0rem !important
+}
+@media (min-width: 1800px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1500px !important;
+  }
+}
 .inter{
   font-family: "Inter", sans-serif !important;
 }
@@ -230,11 +238,14 @@
 .custom-btn {
   background: #ef960b;
   border: 1px solid black;
-  border-radius: 10px;
-  padding: 4px 13px;
+  border-radius: 18px;
+  padding: 3.5px 13px;
   cursor: pointer;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: 'Poppins';
+  font-size: 18px;
+
   /* margin-top: 13px;  */
 }
 .custom-btn-title {
@@ -263,10 +274,8 @@ ul li {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   height: 100%;
-  border-radius: 5px;
-  border-bottom: #ef960b !important;
 }
 .nav-item .nav-links:hover {
   border-bottom: #ef960b;
@@ -304,18 +313,20 @@ ul li {
   display: inline-block;
   background: #ef960b;
   border: 1px solid #fff;
-  border-radius: 20px;
-  padding: 2px 13px;
+  border-radius: 30px;
+  padding: 8px 16px;
   cursor: pointer;
   margin-top: 13px;
+  font-size: 25px;
 }
 .away-btn {
   display: inline-block;
   background: #ef960b;
-  border-radius: 20px;
-  padding: 2px 13px;
+  border-radius: 30px;
+  padding: 8px 16px;
   cursor: pointer;
   margin-top: 13px;
+  font-size: 25px;
 }
 .banner-container {
   background-image: url("./images/baneer-img.png");
@@ -346,11 +357,13 @@ ul li {
 }
 .quality-text {
   font-weight: normal;
-  font-size: 35px;
+  font-size: 70px;
+  font-family: "Poppins";
 }
 .small-text {
-  font-size: 14px;
+  font-size: 25px;
   color: #919191;
+  font-family: "Lato";
 }
 .card-body {
   height: 220px;
@@ -412,10 +425,11 @@ ul li {
   margin-top: 10px;
 }
 .van-img {
-  width: 100%;
+  width: 90%;
   /* height: 100px; */
+  right: 10%;
   position: absolute;
-  top: 29%;
+  top: 27%;
 }
 .trip-container {
   background-image: url("./images/curve.png");

@@ -5,9 +5,9 @@ const Services = ({ title, text }) => {
         <div className='container py-5'>
             <div className="row">
                 <div className="col-12 text-center">
-                    <h1 className='inter' style={{textDecoration: "underline", textDecorationColor: "#D3D3D3"}}>{title}</h1>
+                    <h1 className='inter' style={{textDecorationColor: "#D3D3D3", fontSize: "70px", fontWeight: "400"}}>{title}</h1>
                     
-                    <p className='text-services'>{text}</p>
+                    <p className='text-services poppin fw-thin' style={{fontSize: "30px"}}>{text}</p>
                     
                 </div>
             </div>

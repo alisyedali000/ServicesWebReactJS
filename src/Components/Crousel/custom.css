@@ -1,7 +1,7 @@
 .carousel {
   background: linear-gradient(90deg, white 40%, #469187 40%);
 padding: 6rem 0;
-margin-top: 3rem;
+margin: 8rem 0;
 }
 .carousel-item .row {
   display: flex;
@@ -40,7 +40,7 @@ margin-top: 3rem;
 .card-content p{
 color: black;
 font-size: 1rem;
-line-height: 1rem;
+line-height: 1.4rem;
 margin-bottom: 0;
 padding-top: 2rem;
 }
