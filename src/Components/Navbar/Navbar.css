@@ -1,7 +1,9 @@
 .topbar {
   width: 30px;
 }
-
+.active{
+  border-bottom: 2px solid #EF960B !important;
+}
 .navbar {
   background: #0b0b0b;
   font-family: "Poppins", sans-serif;

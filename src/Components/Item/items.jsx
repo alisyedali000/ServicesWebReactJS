@@ -33,7 +33,7 @@ const itemsData = [
 
 const Items = () => {
     return (
-        <div className='container'>
+        <div className='container py-5'>
             <div className="py-5 row">
                 {itemsData.map((item, index) => (
                     <div className="col-sm-3 col-12 p-1" key={index}>
