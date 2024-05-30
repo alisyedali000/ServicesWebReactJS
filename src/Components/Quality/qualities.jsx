@@ -1,54 +1,50 @@
-import React from 'react'
-import BookMark1 from '../../images/bookmark1.png'
-import BookMark2 from '../../images/bookmark2.png'
-import BookMark3 from '../../images/bookmark3.png'
-import BookMark4 from '../../images/bookmark4.png'
+import React from 'react';
+import BookMark1 from '../../images/bookmark1.png';
+import BookMark2 from '../../images/bookmark2.png';
+import BookMark3 from '../../images/bookmark3.png';
+import BookMark4 from '../../images/bookmark4.png';
+
+const qualitiesData = [
+  {
+    img: BookMark1,
+    title: 'Premium Quality',
+    text: 'We provide exceptional maintenance for high-end villas. Our attention to detail ensures your home stays in excellent condition, reflecting its luxury and sophistication.',
+  },
+  {
+    img: BookMark2,
+    title: 'Exceptional Experience',
+    text: 'We understand the trust and quality expected by residents of elite properties. 888 Services consistently exceeds customer expectations, ensuring superior and reliable service every time.',
+  },
+  {
+    img: BookMark3,
+    title: 'Smart Solutions',
+    text: 'Our mobile app provides unmatched access to our system, giving customers full visibility of their property. Track requests, access asset information, and view scheduled maintenance.',
+  },
+  {
+    img: BookMark4,
+    title: 'International Standards',
+    text: 'We adhere to international standards and our rigorous staff training ensures top-quality service delivery.',
+  },
+];
+
 const Qualities = () => {
-    return (
-        <div className='container quality-container'>
-            <div className="row bg-black p-5 rounded">
-                <div className="col-sm-12 col-md-6 col-lg-3 card-container">
-                    <div className="card border-0 d-flex align-items-center text-align-center bg-black" style={{ width: '15rem' }}>
-                        <img src={BookMark1} className="card-img-top" alt='' />
-                        <div className="card-body text-center">
-                            <h5 className="card-title">Premium Quality</h5>
-                            <p className="card-text">We provide exceptional maintenance for high-end villas. Our attention to detail ensures your home stays in excellent condition, reflecting its luxury and sophistication</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-3 card-container ">
-                    <div className="card border-0 d-flex align-items-center text-align-center bg-black" style={{ width: '15rem' }}>
-                        <img src={BookMark2} className="card-img-top" alt='' />
-                        <div className="card-body text-center">
-                            <h5 className="card-title">Exceptional Experience</h5>
-                            <p className="card-text">We understand the trust and quality expected by residents of elite properties. 888 Services consistently exceeds customer expectations, ensuring superior and reliable service every time.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-3 card-container ">
-                    <div className="card border-0 d-flex align-items-center text-align-center bg-black" style={{ width: '15rem' }}>
-                        <img src={BookMark3} className="card-img-top" alt='' />
-                        <div className="card-body text-center">
-                            <h5 className="card-title"> Smart Solutions</h5>
-                            <p className="card-text">Our  mobile app provides unmatched access to our system, giving customers full visibility of their property. Track requests, access asset information, and view scheduled maintenance</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-3 card-container ">
-                    <div className="card border-0 d-flex align-items-center text-align-center bg-black" style={{ width: '15rem' }}>
-                        <img src={BookMark4} className="card-img-top" alt='' />
-                        <div className="card-body text-center border-0">
-                            <h5 className="card-title"> International Standards</h5>
-                            <p className="card-text">We adhere to international standards and our rigorous staff training ensures top-quality service delivery.  </p>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className='container quality-container'>
+      <div className="row bg-black px-2 rounded">
+        {qualitiesData.map((quality, index) => (
+          <div key={index} className="col-sm-12 col-md-6 col-lg-3 card-container text-center px-1 pt-5 pb-1">
+            <div className="card border-0 d-flex align-items-center text-align-center bg-black" >
+              <img src={quality.img} alt={quality.title} style={{height: "2.4rem"}}/>
+              <div className="card-body text-center px-3 py-0  " style={index != qualitiesData.length-1 && window.innerWidth > 700 ? {borderRight: ".3px solid #5A5A5A", height: "fit-content"}: {}}>
+                <p className="card-title inter pb-3 pt-3" style={{fontSize:"1.3rem", color:"#BCBCBC"}}>{quality.title}</p>
+                <p className="card-text lato" style={{color: "#5A5A5A"}}>{quality.text}</p>
+              </div>
             </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-
-
-        </div>
-    )
-}
-
-export default Qualities
+export default Qualities;
