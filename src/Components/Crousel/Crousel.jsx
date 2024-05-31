@@ -68,11 +68,11 @@ function DarkVariantExample() {
                       <div className="card-main">
                         <img className="card-img-top" src={slide.imgSrc} alt={slide.name} />
                         <div>
-                          <p>{slide.name}</p>
-                          <small>{slide.title}</small>
+                          <p style={{fontSize:"20px",marginBottom: "8px", fontWeight: "normal"}}>{slide.name}</p>
+                          <small style={{fontSize:"15px"}}>{slide.title}</small>
                         </div>
                       </div>
-                      <div className="card-content h-100" style={{ marginTop: "10%" }}>
+                      <div className="card-content h-100" style={{ marginTop: "8%" }}>
                         <p>{slide.testimonial}</p>
                       </div>
                     </div>

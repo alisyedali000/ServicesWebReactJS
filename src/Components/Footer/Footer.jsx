@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className='footer--services align-items-md-start align-items-center '>
-                <h1 className='logo-text footer-title fw-medium ps-2 '>Services</h1>
+                <h3 className='logo-text footer-title fw-medium ps-2 '>Services</h3>
                 <ul className="footer--services-list text-gray d-flex align-items-md-start align-items-center p-0">
                   <li className="footer-services-item">Air Condition</li>
                   <li className="footer-services-item">Electrical</li>
