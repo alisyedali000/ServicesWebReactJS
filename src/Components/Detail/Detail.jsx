@@ -2,7 +2,7 @@ import React from 'react'
 
 const Detail = ({ data }) => {
     return (
-        <div className='container poppin px-3 px-sm-0'>
+        <div className='container container-fluid poppin px-3 px-sm-0'>
             <div className="row">
                 {data.map((item) => (
                     <div className="col-sm-3 col-12 text-center text-sm-start p-2 rounded">

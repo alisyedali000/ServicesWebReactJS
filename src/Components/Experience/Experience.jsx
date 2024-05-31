@@ -3,10 +3,10 @@ import Button from '../button/button'
 const Experience = () => {
     return (
         <div style={{ background: "#EF960B", padding: "50px 0" }}>
-            <div className='container'>
+            <div className='container container-fluid'>
                 <div className='row d-sm-flex align-items-sm-center justify-content-sm-between text-center text-sm-start'>
                     <div className='col-sm-6 col-12'>
-                        <p className='inter fw-light' style={{ fontSize: "4.375rem", lineHeight: "normal" }}>Ready to Experience premium Care?</p>
+                        <h1 className='inter fw-light' style={{ fontSize: "4.375rem", lineHeight: "normal" }}>Ready to Experience premium Care?</h1>
                     </div>
                     <div className='col-sm-4 col-12 poppin'>
                         <p className="gray" style={{ fontSize: "1.56rem" }}>Schedule your free visit

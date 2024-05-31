@@ -8,7 +8,9 @@ margin: 8rem 0;
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
-
+.carousel-item.active {
+  border-bottom: 0 !important;
+}
 .carousel-item .col-2 {
   flex: 0 0 16.6667%;
   max-width: 16.6667%;
