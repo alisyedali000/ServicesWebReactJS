@@ -16,7 +16,7 @@ console.log(data)
             <div className="">
               <img src={path + data.mainImg} alt="AC" style={{ width: "13.25rem" }} />
 
-              <h1 className='inter fw-light heading' style={{ fontSize: "4.375rem" }}>{data.title}</h1>
+              <h1 className='quitos fw-light heading' style={{ fontSize: "4.375rem" }}>{data.title}</h1>
               <p className='lato text_yellow' style={{ fontSize: "1.68rem" }}>{data.subtitle}</p>
               <p className='poppin text-dynamic gray' style={{ fontSize: "1.56rem", paddingTop: "2.7rem" }}>{data.description}</p>
             </div>
@@ -32,7 +32,7 @@ console.log(data)
         <div className='container'>
           <div className='row d-sm-flex align-items-sm-center justify-content-sm-between text-center text-sm-start'>
             <div className='col-sm-6 col-12'>
-              <p className='inter fw-light' style={{ fontSize: "4.375rem", lineHeight:"normal" }}>{data.bookTitle}</p>
+              <p className='quitos fw-light' style={{ fontSize: "4.375rem", lineHeight:"normal" }}>{data.bookTitle}</p>
             </div>
             <div className='col-sm-4 col-12 poppin'>
               <p className="gray" style={{ fontSize: "1.56rem" }}>{data.bookDescription}</p>

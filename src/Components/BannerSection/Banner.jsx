@@ -7,7 +7,7 @@ const Banner = () => {
 
                 <div className="row align-items-center" >
                     <div className="col-12 text-start">
-                        <h1 className='quality-text inter'>Premium Quality <br />
+                        <h1 className='quality-text quitos'>Premium Quality <br />
                             Maintenance Service</h1>
                         <small className='small-text'>
                             Delivering Top-Quality Service for Luxury Homes in the UAE

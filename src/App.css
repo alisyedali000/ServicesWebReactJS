@@ -14,6 +14,26 @@
       max-width: 1500px !important;
   }
 }
+
+@font-face {
+  font-family: 'Quitos';
+  src: url('./quitos-font/Quitos.otf') format('opentype'),
+       url('./quitos-font/Quitos.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Bambe-Swash';
+  src: url('../BambeFont/bambe-swash.otf') format('opentype'),
+       url('../BambeFont//bambe-swash.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+.quitos{
+  font-family: 'Quitos', sans-serif !important;
+}
 .inter{
   font-family: "Inter", sans-serif !important;
 }

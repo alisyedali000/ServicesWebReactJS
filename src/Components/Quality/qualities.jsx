@@ -36,7 +36,7 @@ const Qualities = () => {
             <div className="card border-0 d-flex align-items-center text-align-center bg-black" >
               <img src={quality.img} alt={quality.title} style={{height: "2.5rem"}}/>
               <div className="card-body text-center px-3 py-0  " style={index != qualitiesData.length-1 && window.innerWidth > 700 ? {borderRight: ".3px solid #5A5A5A", height: "fit-content"}: {}}>
-                <p className="card-title inter pb-3 pt-3" style={{fontSize:"1.3rem", color:"#BCBCBC"}}>{quality.title}</p>
+                <p className="card-title quitos pb-3 pt-3" style={{fontSize:"1.3rem", color:"#BCBCBC"}}>{quality.title}</p>
                 <p className="card-text lato" style={{color: "#5A5A5A"}}>{quality.text}</p>
               </div>
             </div>
