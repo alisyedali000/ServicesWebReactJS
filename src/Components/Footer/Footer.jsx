@@ -6,6 +6,7 @@ import storeLogo from '../../images/playstore.png';
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -66,10 +67,10 @@ const Footer = () => {
             <div className="col-sm-12 col-md-6 col-lg-4 my-5 text-md-start text-center">
               <div className='footer--follow'>
                 <h3 className='mb-3'>Follow us</h3>
-                <div className='footer-icons text-md-start text-center'>
-                  <FaFacebookF className='me-3' width='2em' height='2em' />
-                  <FaInstagram className='mx-3' width={23} height={23} />
-                  <FaLinkedinIn className='mx-3' width={23} height={23} />
+                <div className='footer-icons text-md-start text-center'>  
+                <Link to={'https://www.facebook.com/888services.ae'}> <FaFacebookF className='me-3' width='2em' height='2em' /></Link>
+                   <Link to={'https://www.instagram.com/888services.ae/'}><FaInstagram className='mx-3' width={23} height={23} /></Link>
+                  <Link to={'https://www.linkedin.com/company/888-services-llc'}><FaLinkedinIn className='mx-3' width={23} height={23} /></Link>
                 </div>
               </div>
             </div>
