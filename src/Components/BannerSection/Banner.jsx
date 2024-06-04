@@ -29,7 +29,7 @@ const Banner = () => {
             <div   style={{position: "absolute", left:`${maxWidth}px`}}>
             <div className='container ' ref={containerRef} >
                 <div className="row align-items-center" >
-                    <div className="col-12 text-start">
+                    <div className="col-12 text-start px-4 px-sm-0">
                         <h1 className='quality-text quitos'>Premium Quality <br />
                             Maintenance Service</h1>
                         <small className='small-text'>
