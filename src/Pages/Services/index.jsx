@@ -16,7 +16,7 @@ console.log(data)
             <div className="">
               <img src={path + data.mainImg} alt="AC" style={{ width: "13.25rem" }} />
 
-              <h1 className='quitos fw-light heading' style={{ fontSize: "4.375rem" }}>{data.title}</h1>
+              <h1 className='quitos fw-light heading pt-4' style={{ fontSize: "4.375rem" }}>{data.title}</h1>
               <p className='lato text_yellow' style={{ fontSize: "1.68rem" }}>{data.subtitle}</p>
               <p className='poppin text-dynamic gray' style={{ fontSize: "1.56rem", paddingTop: "2.7rem" }}>{data.description}</p>
             </div>

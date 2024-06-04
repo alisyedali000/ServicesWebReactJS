@@ -37,8 +37,13 @@ const Footer = () => {
               <div className='footer--contact align-items-md-start align-items-center text-md-start'>
                 <h3 className='logo-text footer-title fw-medium ps-2'>Contact</h3>
                 <ul className="footer--contact-list text-gray align-items-md-start align-items-center p-0">
-                  <li className="footer-contact-item ">+971(4) 8923308</li>
-                  <li className="footer-contact-item mt-0">+971 50 387 7070</li>
+                <li className="footer-contact-item">
+                  <a href="tel:+97148923308" style={{textDecoration: "none"}}>+971 48 923 308</a>
+                </li>
+                <li className="footer-contact-item mt-0">
+                  <a href="tel:+971503677070" style={{textDecoration: "none"}}>+971 50 367 7070</a>
+                </li>
+
                   <br/>
                   <li className="footer-contact-item">info@888services.ae</li>
                   <br/>

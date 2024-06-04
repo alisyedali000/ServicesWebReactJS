@@ -165,9 +165,9 @@ const handleMobileNavClose = () => {
               <div className="d-flex align-items-center justify-content-start">
                 <p  className="m-0 poppin" style={{fontSize: "14px",paddingRight: "3.19rem"}}>04-892 3308</p>
                 <div style={{display: "flex", columnGap: "20px", paddingRight: "20px"}}>
-                  <img src={window.location.origin + '/images/Navbar/f.png'} style={{width: "17px"}}/>
-                  <img src={window.location.origin + '/images/Navbar/i.png'} style={{width: "17px"}}/>
-                  <img src={window.location.origin + '/images/Navbar/l.png'} style={{width: "17px"}}/>
+                  <Link to={'https://www.facebook.com/888services.ae'}> <img src={window.location.origin + '/images/Navbar/f.png'} style={{width: "17px"}}/></Link>
+                   <Link to={'https://www.instagram.com/888services.ae/'}><img src={window.location.origin + '/images/Navbar/i.png'} style={{width: "17px"}}/></Link>
+                  <Link to={'https://www.linkedin.com/company/888-services-llc'}><img src={window.location.origin + '/images/Navbar/l.png'} style={{width: "17px"}}/></Link>
                 </div>
               </div>
             </div>

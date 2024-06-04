@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import img from "../../images/baneer-img.png"
+import "./index.css"
 
 const Banner = () => {
     const containerRef = useRef(null);
