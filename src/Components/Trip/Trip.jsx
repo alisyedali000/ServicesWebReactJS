@@ -2,6 +2,9 @@ import React from 'react'
 import Button from '../button/button'
 import VanImg from '../../images/van.png'
 import a from "../../images/curve.png"
+import curv from "../../images/curv.png"
+
+
 const Trip = () => {
     return (
         <div className='bg-white ps-5'>
@@ -19,8 +22,9 @@ const Trip = () => {
 
 
                 <div className="col-sm-12 col-lg-6 position-relative trip-imges text-end">
-                    <img src={VanImg} alt="" className='van-img' />
-                    <img src={a} alt='asas' className='img-fluid' />
+                    <img src={curv} alt='asas' />
+                    {/* <img src={VanImg} alt="" className='van-img' />
+                    <img src={a} alt='asas' className='img-fluid' /> */}
                 </div>
             </div>
 

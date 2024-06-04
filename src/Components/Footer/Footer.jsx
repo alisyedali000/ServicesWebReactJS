@@ -38,10 +38,10 @@ const Footer = () => {
                 <h3 className='logo-text footer-title fw-medium ps-2'>Contact</h3>
                 <ul className="footer--contact-list text-gray align-items-md-start align-items-center p-0">
                 <li className="footer-contact-item">
-                  <a href="tel:+97148923308" style={{textDecoration: "none"}}>+971 48 923 308</a>
+                  <a href="tel:+97148923308" className='footer-contact-item text-gray' style={{textDecoration: "none"}}>+971 48 923 308</a>
                 </li>
                 <li className="footer-contact-item mt-0">
-                  <a href="tel:+971503677070" style={{textDecoration: "none"}}>+971 50 367 7070</a>
+                  <a href="tel:+971503677070" className='footer-contact-item text-gray' style={{textDecoration: "none"}}>+971 50 367 7070</a>
                 </li>
 
                   <br/>
