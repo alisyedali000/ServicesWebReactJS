@@ -11,7 +11,7 @@ const Away = () => {
                     <div className="col-lg-6">
                         <img src={Iphone} alt="" className='iphone-img img-fluid' />
                     </div>
-                    <div className="col-sm-12 col-lg-6 center-content">
+                    <div className="col-sm-12 col-lg-6 center-content text-center text-sm-start">
                         <div className="p-4">
                             <h1 className='text-white quitos' >One Tap Away!</h1>
                             <p className='my-4 text-away poppin' style={{fontSize: "30px"}}>Be in control of your home

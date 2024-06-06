@@ -34,8 +34,8 @@ const itemsData = [
 
 const Items = () => {
     return (
-        <div className='container py--sm-5'>
-            <div className="py-0 pb-5 py-sm-0 row one-trip-row px-sm-0 px-3">
+        <div className='container py-sm-5'>
+            <div className="py-0 mb-sm-5 py-sm-5 pb-5 py-sm-0 row one-trip-row px-sm-0 px-3">
                 {itemsData.map((item, index) => (
                     <div className="col-sm-3 col-12 p-1" key={index}>
                         <div className='bg-white w-100  d-flex align-items-center justify-content-center py-5'>
