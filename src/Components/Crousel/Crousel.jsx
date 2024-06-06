@@ -23,12 +23,12 @@ const slides = [
     title: "Project Supervisor",
     testimonial: "ABZ Network has been a game-changer for us. Their dedication and commitment to quality work is evident in everything they do. We look forward to more projects with them."
   },
-  {
-    imgSrc: carousel3,
-    name: "Sarah Ahmed",
-    title: "Project Supervisor",
-    testimonial: "ABZ Network has been a game-changer for us. Their dedication and commitment to quality work is evident in everything they do. We look forward to more projects with them."
-  }
+  // {
+  //   imgSrc: carousel3,
+  //   name: "Sarah Ahmed",
+  //   title: "Project Supervisor",
+  //   testimonial: "ABZ Network has been a game-changer for us. Their dedication and commitment to quality work is evident in everything they do. We look forward to more projects with them."
+  // }
 ];
 
 function DarkVariantExample() {
@@ -59,11 +59,11 @@ function DarkVariantExample() {
       >
         {slideChunks.map((chunk, index) => (
           <Carousel.Item key={index}>
-            <div className="row text-white">
+            <div className="row text-white py-3">
               <div className="col-0 col-sm-3"></div>
               {chunk.map((slide, idx) => (
-                <div className="col-sm-4 col-12" key={idx}>
-                  <div className="card rounded bg-white border-0">
+                <div className="col-sm-4 col-12 " style={{padding: "0 2rem"}} key={idx}>
+                  <div className="card  bg-white border-0 box-shadow px-3">
                     <div className="card-body" style={{ height: "398px", paddingTop: "60px" }}>
                       <div className="card-main">
                         <img className="card-img-top" src={slide.imgSrc} alt={slide.name} />

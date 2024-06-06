@@ -68,9 +68,9 @@ const Footer = () => {
               <div className='footer--follow'>
                 <h3 className='mb-3'>Follow us</h3>
                 <div className='footer-icons text-md-start text-center'>  
-                <Link to={'https://www.facebook.com/888services.ae'}> <FaFacebookF className='me-3 text-gray' width='2em' height='2em' /></Link>
-                   <Link to={'https://www.instagram.com/888services.ae/'}><FaInstagram className='mx-3 text-gray' width={23} height={23} /></Link>
-                  <Link to={'https://www.linkedin.com/company/888-services-llc'}><FaLinkedinIn className='mx-3 text-gray' width={23} height={23} /></Link>
+                <Link to={'https://www.facebook.com/888services.ae'}> <FaFacebookF className='me-3 text-white' width='2em' height='2em' /></Link>
+                   <Link to={'https://www.instagram.com/888services.ae/'}><FaInstagram className='mx-3 text-white' width={23} height={23} /></Link>
+                  <Link to={'https://www.linkedin.com/company/888-services-llc'}><FaLinkedinIn className='mx-3 text-white' width={23} height={23} /></Link>
                 </div>
               </div>
             </div>

@@ -502,6 +502,9 @@ ul li {
 }
 
 @media screen and (max-width: 780px) {
+  .card-body {
+    height: auto !important;
+  }
   .logo-portion {
     display: flex;
     justify-content: space-between;
@@ -551,4 +554,12 @@ ul li {
 }
 h1{
   font-size: 4.375rem !important
+}
+
+.row {
+  width: 100%;
+}
+
+.one-trip-row{
+  --bs-gutter-x: 0 !important;
 }

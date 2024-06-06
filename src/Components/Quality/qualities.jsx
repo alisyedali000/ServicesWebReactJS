@@ -29,10 +29,10 @@ const qualitiesData = [
 
 const Qualities = () => {
   return (
-    <div className='container quality-container'>
+    <div className='container quality-container' style={{textAlign: "-webkit-center"}}>
       <div className="row bg-black  px-2  rounded">
         {qualitiesData.map((quality, index) => (
-          <div key={index} className="col-sm-12 col-md-6 col-lg-3 card-container text-center px-0 pt-5 pb-2 ">
+          <div key={index} className="col-sm-12 col-md-6 col-lg-3 card-container text-center px-0 pt-5 pb-5 pb-2 ">
             <div className="card border-0 d-flex align-items-center text-align-center bg-black" >
               <img src={quality.img} alt={quality.title} style={{height: "2.5rem"}}/>
               <div className="card-body text-center px-3 py-0  " style={index != qualitiesData.length-1 && window.innerWidth > 700 ? {borderRight: ".3px solid #5A5A5A", height: "fit-content"}: {}}>

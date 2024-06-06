@@ -34,8 +34,8 @@ const itemsData = [
 
 const Items = () => {
     return (
-        <div className='container py-5'>
-            <div className="py-5 row">
+        <div className='container py--sm-5'>
+            <div className="py-0 pb-5 py-sm-0 row one-trip-row px-sm-0 px-3">
                 {itemsData.map((item, index) => (
                     <div className="col-sm-3 col-12 p-1" key={index}>
                         <div className='bg-white w-100  d-flex align-items-center justify-content-center py-5'>
@@ -45,7 +45,6 @@ const Items = () => {
                                 <h5 className='poppin' style={{color: "black"}}>{item.title}</h5>
                                 <small className='lato' style={{color: "#A5A5A5"}}>{item.description}</small>
                             </div>
-                            
                         </NavLink>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ const Banner = () => {
   console.log(maxWidth, parseInt(maxWidth, 10), window.innerWidth, )
     return (
         <div className='d-flex align-items-center' style={{position: "relative"}}>
-            <img src={img} className='w-100'/>
+            <img src={img} className='w-100' style={window.innerWidth < 500 ? {objectFit: "cover", height: "425px"}: {}}/>
             <div   style={{position: "absolute", left:`${maxWidth}px`}}>
             <div className='container ' ref={containerRef} >
                 <div className="row align-items-center" >
