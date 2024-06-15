@@ -1,0 +1,13 @@
+.img-fluid{
+    height: 85%;
+    max-width: 100%;
+    padding-top: 75px;
+}
+
+@media (max-width: 768px){
+    .img-fluid{
+        height: 100%;
+        padding-top: 46px;
+        padding-bottom: 30px;
+    }
+}

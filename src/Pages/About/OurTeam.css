@@ -1,0 +1,75 @@
+/* src/App.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-family: Garamond, Georgia, "Adobe Caslon Pro", Quitos, sans-serif;
+  font-size: 4.375rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-family: revert-layer;
+  margin-bottom: 2rem;
+  color: #696969;
+  
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.member-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.member-name {
+  font-size: 30px;
+  margin: 0;
+}
+
+.member-title {
+  font-size: 1em;
+  margin: 0;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  width: 40%;
+  max-width: fit-content;
+  object-fit: contain;
+  object-position: right center;
+  opacity: 0.1;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .member-card {
+    width: 100%;
+  }
+}

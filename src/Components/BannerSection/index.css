@@ -1,8 +1,51 @@
 @media (max-width: 576px) {
-    h1{
-        font-size: 2.5rem !important;
-    }
-    .small-text {
-        font-size: 1.5rem !important;
-    }
+  h1 {
+    font-size: 2.5rem !important;
   }
+  .banner-title {
+    margin-top: 12px !important;
+  }
+}
+
+.banner-title {
+  margin-top: -128px !important;
+}
+
+.banner-image {
+  height: 700px !important;
+  width: 100%;
+  background: url("../../images/baneer-img.png") no-repeat center center;
+  background-size: cover;
+}
+
+
+@media (max-width: 767px) {
+  .banner-image {
+    height: 800px !important;
+    width: 100%;
+    background: url("../../images/mobile-banner.png") no-repeat -720px 10%;
+    background-size: cover;
+  }
+  .banner-title {
+    margin-top: -200px !important;
+  }
+  .quality-text {
+      font-size: 37px !important;
+    }
+  .banner-img {
+    margin-left: -483px !important;
+  }
+  .small-text{
+    font-size: 12.5px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner-title {
+    margin-top: -25px !important;
+  }
+  .quality-text {
+    font-size: 31px !important;
+  }
+
+}
