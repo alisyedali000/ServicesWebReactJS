@@ -66,6 +66,7 @@ const Qualities = () => {
                 <p className="card-text lato quality-subtitle" >
                   {quality.text}
                 </p>
+
               </div>
             </div>
           </div>

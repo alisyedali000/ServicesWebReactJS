@@ -1,3 +1,4 @@
+
 import React from "react";
 import Button from "../button/button";
 import curv from "../../images/curve.png";
@@ -53,6 +54,7 @@ const Trip = () => {
             alt="van"
             className="overlay-img van"
           />
+
         </div>
       </div>
     </div>
