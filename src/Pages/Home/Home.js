@@ -28,8 +28,8 @@ function Home() {
         </div>
         <Trip />
         <Away />
-        <Services title="What our Customers  Say!" />
-        <Crousel />
+        {/* <Services title="What our Customers  Say!" />
+        <Crousel /> */}
         <Experience />
 
     </>

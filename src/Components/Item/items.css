@@ -1,0 +1,30 @@
+.item-card {
+  /* column-gap: 1px; */
+  /* margin-left: -40px; */
+  margin-bottom: 100px;
+  /* width: 125%; */
+}
+
+@media (max-width: 1467px) {
+  .item-card {
+    /* margin-left: 100px; */
+    width: 100%;
+  }
+}
+/* @media (min-width: 1159px) {
+  .item-card {
+    margin-left: 35px;
+    width: 120%;
+  }
+} */
+@media (max-width: 575px) {
+  .item-card {
+    margin-left: 10px !important;
+    width: 94%;
+  }
+}
+
+.item-sub-card {
+  flex: 0 0 auto;
+  width: 25%;
+}

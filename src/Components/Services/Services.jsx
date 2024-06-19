@@ -1,14 +1,12 @@
 import React from 'react'
-
+import "./Services.css"
 const Services = ({ title, text }) => {
     return (
-        <div className='container py-5'>
-            <div className="row">
-                <div className="col-12 text-center">
-                    <h1 className='inter' style={{textDecorationColor: "#D3D3D3", fontSize: "70px", fontWeight: "400"}}>{title}</h1>
-                    
-                    <p className='text-services poppin fw-thin' style={{fontSize: "30px"}}>{text}</p>
-                    
+        <div className='container py-5 service-header'>
+            <div className="row px-3">
+                <div className="col-12 text-center" style={!text ? {display: "flex", justifyContent: "center"} : {}}>
+                    <h1 className='quitos' style={!text ? {borderBottom: "5px solid #D3D3D3", width: "max-content"} : {textDecorationColor: "#D3D3D3", fontWeight: "400"}}>{title}</h1>
+                    <p className='text-services poppin fw-thin' style={{fontSize: "1.8rem"}}>{text}</p>
                 </div>
             </div>
         </div>

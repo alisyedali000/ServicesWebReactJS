@@ -1,0 +1,21 @@
+@media (max-width: 768px){
+    .mobile{
+        width: 90%;
+        border-radius: 12px !important;
+        margin-top: -45px !important;
+    }
+    .quality-title{
+        font-size: 2.3rem !important;
+    }
+    .quality-subtitle{
+        font-size: 17px;
+    }
+}
+
+.quality-title{
+    font-size: 1.3rem;
+    color:#BCBCBC
+}
+.quality-subtitle{
+    color:rgb(90, 90, 90);
+}
