@@ -419,7 +419,7 @@ export const content = [
       {
         title: "Oven and Stove",
         description:
-          "Our specialists evaluate and optimize your AC's cooling performance, reducing energy costs.",
+          "Our specialists evaluate and optimize your AC’s cooling performance, reducing energy costs.",
         icon: "/images/AppliancesMaintenance/2.png",
       },
       {
@@ -437,7 +437,7 @@ export const content = [
       {
         title: "AC Unit",
         description:
-          "We verify your thermostat's functionality to ensure accurate temperature control and energy efficiency.",
+          "We verify your thermostat’s functionality to ensure accurate temperature control and energy efficiency.",
         icon: "/images/AppliancesMaintenance/5.png",
       },
       {
@@ -449,13 +449,13 @@ export const content = [
       {
         title: "Home Entertainment",
         description:
-          "We check and top up refrigerant levels to maintain optimal cooling and system performance.",
+          "We set up and maintain your home entertainment systems for the best experience.",
         icon: "/images/AppliancesMaintenance/7.png",
       },
       {
         title: "Microwave",
         description:
-          "We inspect all electrical connections for safety and reliability, ensuring the safe operation of your AC system.",
+          "We install and service your microwave for reliable, safe, and optimal performance.",
         icon: "/images/AppliancesMaintenance/8.png",
       },
     ],

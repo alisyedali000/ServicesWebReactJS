@@ -4,8 +4,16 @@ import uaeFlag from "../../images/uae_flag.png";
 import "./GetAQuote.css";
 import emailjs from "@emailjs/browser";
 import CheckmarkAnimation from "../../assets/animations/CheckAnimation";
+import GoogleMapReact from 'google-map-react';
 
 const GetAQuote = () => {
+  const defaultProps = {
+    center: {
+      lat: 24.963390,
+      lng: 55.082670
+    },
+    zoom: 14
+  };
   const [formData, setFormData] = useState({
     request_type: "Quote",
     firstName: "",
@@ -127,7 +135,7 @@ const GetAQuote = () => {
       <div className={`success-message ${emailSentMessage ? "show" : ""}`}>
         {emailSentMessage}
       </div>
-   {emailSentMessage ? <CheckmarkAnimation/>: <>  <div
+      {emailSentMessage ? <CheckmarkAnimation /> : <>  <div
         className="input-container mobile-input-width"
         style={{ width: "91%" }}
       >
@@ -154,96 +162,105 @@ const GetAQuote = () => {
           <span className="required-asterisk">*</span>
         </div>
       </div>
-      <div
-        className="input-container mobile-input-width"
-        style={{ width: "91%" }}
-      >
-        <div className="mobile-input-container">
-          <span className="flag-icon-container">
-            <img src={uaeFlag} alt="UAE Flag" className="flag-icon" />
-          </span>
+        <div
+          className="input-container mobile-input-width"
+          style={{ width: "91%" }}
+        >
+          <div className="mobile-input-container">
+            <span className="flag-icon-container">
+              <img src={uaeFlag} alt="UAE Flag" className="flag-icon" />
+            </span>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                value={formData.mobile}
+                name="mobile"
+                onChange={handleChange}
+                className={`input-field flag-input ${errors.mobile ? "input-error" : ""
+                  }`}
+                placeholder="Mobile"
+                pattern="\d{1,10}"
+                maxLength="10"
+              />
+              <span className="required-asterisk">*</span>
+            </div>
+          </div>
           <div className="input-wrapper">
             <input
-              type="text"
-              value={formData.mobile}
-              name="mobile"
+              type="email"
+              value={formData.email}
+              name="email"
               onChange={handleChange}
-              className={`input-field flag-input ${
-                errors.mobile ? "input-error" : ""
-              }`}
-              placeholder="Mobile"
-              pattern="\d{1,10}"
-              maxLength="10"
+              className={`input-field ${errors.email ? "input-error" : ""}`}
+              placeholder="Email"
             />
             <span className="required-asterisk">*</span>
           </div>
         </div>
-        <div className="input-wrapper">
-          <input
-            type="email"
-            value={formData.email}
-            name="email"
+        <div className="input-container">
+          <select
+            className={`input-field arrow ${errors.firstName ? "input-error" : ""
+              }`}
+            style={{ zIndex: 1 }}
+            name="service"
+            value={formData.service}
             onChange={handleChange}
-            className={`input-field ${errors.email ? "input-error" : ""}`}
-            placeholder="Email"
-          />
-          <span className="required-asterisk">*</span>
-        </div>
-      </div>
-      <div className="input-container">
-        <select
-          className={`input-field arrow ${
-            errors.firstName ? "input-error" : ""
-          }`}
-          style={{ zIndex: 1 }}
-          name="service"
-          value={formData.service}
-          onChange={handleChange}
-        >
-          <option value="" disabled>
-            Select Type of Service
-          </option>
-          {itemsData.map((service) => (
-            <option key={service.title} value={service.title}>
-              {service.title}
+          >
+            <option value="" disabled>
+              Select Type of Service
             </option>
-          ))}
-        </select>
-        <span className="custom-asterik">*</span>
-        <select
-          className="input-field arrow"
-          style={{ zIndex: 1 }}
-          name="timeSlot"
-          value={formData.timeSlot}
-          onChange={handleChange}
-        >
-          <option value="" disabled>
-            Select Time Slot
-          </option>
-          <option value="morning">Morning</option>
-          <option value="afternoon">Afternoon</option>
-          <option value="evening">Evening</option>
-        </select>
+            {itemsData.map((service) => (
+              <option key={service.title} value={service.title}>
+                {service.title}
+              </option>
+            ))}
+          </select>
+          <span className="custom-asterik">*</span>
+          <select
+            className="input-field arrow"
+            style={{ zIndex: 1 }}
+            name="timeSlot"
+            value={formData.timeSlot}
+            onChange={handleChange}
+          >
+            <option value="" disabled>
+              Select Time Slot
+            </option>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+        </div>
+        <div className="input-container">
+          <textarea
+            name="message"
+            className="textarea-field"
+            placeholder="Your message here..."
+            onChange={handleChange}
+            value={formData.message}
+          ></textarea>
+        </div>
+        <div className="input-container">
+          <button
+            type="submit"
+            className={`submit-button ${isSending && "disabled"}`}
+            onClick={handleSubmit}
+            disabled={isSending}
+          >
+            Submit Now
+          </button>
+        </div></>}
+
+
+      <div style={{ height: '60vh', width: '75%', marginTop: 200, alignSelf: 'center' }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "" }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
+
+
+        />
       </div>
-      <div className="input-container">
-        <textarea
-          name="message"
-          className="textarea-field"
-          placeholder="Your message here..."
-          onChange={handleChange}
-          value={formData.message}
-        ></textarea>
-      </div>
-      <div className="input-container">
-        <button
-          type="submit"
-          className={`submit-button ${isSending && "disabled"}`}
-          onClick={handleSubmit}
-          disabled={isSending}
-        >
-          Submit Now
-        </button>
-      </div></>}
     </div>
   );
 };

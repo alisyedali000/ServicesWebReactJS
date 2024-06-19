@@ -4,8 +4,16 @@ import uaeFlag from "../../images/uae_flag.png";
 import "./EnquiryForm.css";
 import emailjs from "@emailjs/browser";
 import CheckmarkAnimation from "../../assets/animations/CheckAnimation";
+import GoogleMapReact from 'google-map-react';
 
 const EnquiryForm = () => {
+  const defaultProps = {
+    center: {
+      lat: 24.963390,
+      lng: 55.082670
+    },
+    zoom: 14
+  };
   const [formData, setFormData] = useState({
     request_type: "Enquiry",
     firstName: "",
@@ -100,7 +108,7 @@ const EnquiryForm = () => {
       {/* <img src={a} alt="Background" className="background-image" /> */}
       <div className="header-section">
         <h1 className="header-text">Enquire Now</h1>
-       {!emailSentMessage && <p className="subtext">
+        {!emailSentMessage && <p className="subtext">
           Need help or want to book a service? Send us a message below, and our
           team will respond promptly!
         </p>}
@@ -119,9 +127,8 @@ const EnquiryForm = () => {
                 name="firstName"
                 onChange={handleChange}
                 value={formData.firstName}
-                className={`input-field ${
-                  errors.firstName ? "input-error" : ""
-                }`}
+                className={`input-field ${errors.firstName ? "input-error" : ""
+                  }`}
                 placeholder="First Name"
               />
               <span className="required-asterisk">*</span>
@@ -132,9 +139,8 @@ const EnquiryForm = () => {
                 value={formData.lastName}
                 name="lastName"
                 onChange={handleChange}
-                className={`input-field ${
-                  errors.lastName ? "input-error" : ""
-                }`}
+                className={`input-field ${errors.lastName ? "input-error" : ""
+                  }`}
                 placeholder="Last Name"
               />
               <span className="required-asterisk">*</span>
@@ -154,9 +160,8 @@ const EnquiryForm = () => {
                   value={formData.mobile}
                   name="mobile"
                   onChange={handleChange}
-                  className={`input-field flag-input ${
-                    errors.mobile ? "input-error" : ""
-                  }`}
+                  className={`input-field flag-input ${errors.mobile ? "input-error" : ""
+                    }`}
                   placeholder="Mobile"
                   pattern="\d{1,10}"
                   maxLength="10"
@@ -176,32 +181,7 @@ const EnquiryForm = () => {
               <span className="required-asterisk">*</span>
             </div>
           </div>
-          {/* <div className="input-container">
-        <select
-          className="input-field arrow"
-          style={{ zIndex: 1 }}
-          name="service"
-          value={formData.service}
-          onChange={handleChange}
-        >
-          <option value="" disabled>Select Type of Service</option>
-          <option value="service1">Service 1</option>
-          <option value="service2">Service 2</option>
-          <option value="service3">Service 3</option>
-        </select>
-        <select
-          className="input-field arrow"
-          style={{ zIndex: 1 }}
-          name="timeSlot"
-          value={formData.timeSlot}
-          onChange={handleChange}
-        >
-          <option value="" disabled>Select Time Slot</option>
-          <option value="morning">Morning</option>
-          <option value="afternoon">Afternoon</option>
-          <option value="evening">Evening</option>
-        </select>
-      </div> */}
+
           <div className="input-container">
             <textarea
               name="message"
@@ -223,6 +203,16 @@ const EnquiryForm = () => {
           </div>
         </>
       )}
+
+      <div style={{ height: '60vh', width: '75%' , marginTop: 200, alignSelf: 'center'}}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "" }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
+      
+       
+        />
+      </div>
     </div>
   );
 };
