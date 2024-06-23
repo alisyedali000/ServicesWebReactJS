@@ -8,7 +8,7 @@ import washingMachineImg from "../../images/washingmachine.png";
 import paintRollerImg from "../../images/paintroller.png";
 import handspadeImg from "../../images/handspade.png";
 import brickImg from "../../images/brick.png";
-import ropeImg from "../../images/rope.png";
+import ropeImg from "../../images/facadeCleaning.png";
 import electrical1 from "../../images/electrical1.png";
 import elevator from "../../images/elevator.png";
 import { NavLink } from "react-router-dom";

@@ -68,6 +68,7 @@ function Navbar() {
       (e) => e.imgTitle === (hoveredOption ?? "Air Conditioning")
     );
     if (data) {
+      console.log(data.mainImg);
       setHoveredImg(data.mainImg);
       setHoveredImgSub(data.ImgSubtitle);
     }
