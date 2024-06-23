@@ -2,12 +2,14 @@
 	height: 85%;
 	max-width: 100%;
 	padding-top: 75px;
+	object-fit: contain; /* Ensures the image fits within the area without stretching */
 }
 
 @media (max-width: 768px) {
 	.img-fluid {
-		height: 100%;
+		height: auto;
 		padding-top: 46px;
 		padding-bottom: 30px;
+		object-fit: contain; /* Ensures the image fits within the area without stretching */
 	}
 }
