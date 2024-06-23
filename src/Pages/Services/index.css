@@ -1,10 +1,15 @@
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: white;
-    }
-  }
-  @media (max-width: 576px) {
-    .heading{
-        font-size: 3rem !important;
-    }
-  }
+	body {
+		background-color: white;
+	}
+}
+@media (max-width: 576px) {
+	.heading {
+		font-size: 3rem !important;
+	}
+}
+@media (max-width: 576px) {
+	.services-container {
+    padding-left: 18px;
+	}
+}

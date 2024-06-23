@@ -7,11 +7,11 @@ const Service = () => {
   const data = content.find((c) => c.link === id);
   const path = window.location.origin;
   return (
-    <div className="">
+    <div className="services-container">
       <div className="container mt-5 pt-5 px-3 px-sm-0">
         <div className="row">
           <div
-            className=" col-sm-8 col-12 d-flex align-items-center"
+            className="col-sm-8 col-12 d-flex align-items-center"
             style={{ paddingBottom: "10rem" }}
           >
             <div className="">
@@ -33,16 +33,16 @@ const Service = () => {
               />
               <h1
                 className="quitos fw-light heading pt-4"
-                style={{ fontSize: "4.375rem" }}
+                style={{ fontSize: "4.3rem" }}
               >
                 {data.title}
               </h1>
-              <p className="lato text_yellow" style={{ fontSize: "1.68rem" }}>
+              <p className="lato text_yellow" style={{ fontSize: "1.5rem" }}>
                 {data.subtitle}
               </p>
               <p
                 className="poppin text-dynamic gray"
-                style={{ fontSize: "1.56rem", paddingTop: "2.7rem" }}
+                style={{ fontSize: "1.4rem", paddingTop: "2.7rem" }}
               >
                 {data.description}
               </p>
@@ -62,7 +62,7 @@ const Service = () => {
       <Detail data={data.services} />
       <div
         className="px-3 px-sm-0 container poppin gray py-5 my-sm-5"
-        style={{ fontSize: "1.56rem" }}
+        style={{ fontSize: "1.4rem" }}
       >
         <p>{data.footer}</p>
       </div>

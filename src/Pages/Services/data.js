@@ -22,7 +22,7 @@ export const content = [
       {
         title: "Cooling Efficiency",
         description:
-          "Our specialists evaluate and optimize your AC's cooling performance, reducing energy costs.",
+          "Our specialists evaluate and optimize your AC’s cooling performance, reducing energy costs.",
         icon: "/images/AirConditioner/2.png",
       },
       {
@@ -413,31 +413,31 @@ export const content = [
       {
         title: "Refrigerator",
         description:
-          "We clean and disinfect vents, filters, and drainage lines to remove bacteria and allergens, ensuring healthy air.",
+          "We clean vents, filters, and drainage lines to ensure healthy, bacteria-free air.",
         icon: "/images/AppliancesMaintenance/1.png",
       },
       {
         title: "Oven and Stove",
         description:
-          "Our specialists evaluate and optimize your AC’s cooling performance, reducing energy costs.",
+          "Our specialists optimize your oven and stove for peak performance, reducing energy costs.",
         icon: "/images/AppliancesMaintenance/2.png",
       },
       {
         title: "Washing Machine",
         description:
-          "We inspect the fan motor, blower, and evaporator coil to ensure they function correctly, preventing breakdowns.",
+          "We inspect the motor, blower, and evaporator coil to ensure smooth operation and prevent breakdowns.",
         icon: "/images/AppliancesMaintenance/3.png",
       },
       {
         title: "Dishwasher",
         description:
-          "We inspect ducts and balance air flow to ensure even cooling and improved system efficiency.",
+          "We inspect water lines, drainage, and spray arms for efficient cleaning and smooth operation.",
         icon: "/images/AppliancesMaintenance/4.png",
       },
       {
         title: "AC Unit",
         description:
-          "We verify your thermostat’s functionality to ensure accurate temperature control and energy efficiency.",
+          "We verify your thermostat’s functionality for accurate temperature control and energy efficiency.",
         icon: "/images/AppliancesMaintenance/5.png",
       },
       {
@@ -455,12 +455,12 @@ export const content = [
       {
         title: "Microwave",
         description:
-          "We install and service your microwave for reliable, safe, and optimal performance.",
+          "We install and service your microwave for reliable and optimal performance.",
         icon: "/images/AppliancesMaintenance/8.png",
       },
     ],
     footer:
-      "Trust our skilled technicians to handle all your AC needs with professionalism and expertise. Schedule your free AC check-up today and experience the difference of top-quality service.",
+      "Tust our skilled technicians to handle all your appliance needs with professionalism and expertise. Schedule your free appliance check-up today and experience the difference of top-quality service.",
     bookTitle: "Are Your Appliances Running Efficiently?",
     bookDescription:
       "Get a free appliance inspection and tailored maintenance quote.",
